@@ -2,7 +2,7 @@
   "name": "employee-tracker-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -19,9 +19,10 @@
   },
   "homepage": "https://github.com/jthnguyen9909/employee-tracker-cli#readme",
   "dependencies": {
+    "asciiart-logo": "^0.2.7",
     "console.table": "^0.10.0",
     "dotenv": "^16.0.3",
-    "inquirer": "^9.1.4",
+    "inquirer": "^8.2.4",
     "mysql2": "^2.3.3",
     "sequelize": "^6.27.0"
   }

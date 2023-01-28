@@ -7,18 +7,18 @@ Department.hasMany(Employee, {
   onDelete: "CASCADE",
 });
 
-Employee.hasMany(Role, {
-  foreignKey: "employeeId",
-  onDelete: "CASCADE",
-});
-
 Employee.belongsTo(Department, {
   foreignKey: "departmentId",
   onDelete: "CASCADE",
 });
 
+Employee.hasMany(Role, {
+  foreignKey: "role_id",
+  onDelete: "CASCADE",
+});
+
 Role.belongsTo(Employee, {
-  foreignKey: "employeeId",
+  foreignKey: "role_id",
   onDelete: "CASCADE",
 });
 
